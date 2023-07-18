@@ -1,14 +1,19 @@
 import { StyleSheet } from 'react-native';
-import { cores } from '../../../estilos';
+import { cores } from '../../../../styles/estilosGlobal';
 
-export default StyleSheet.create({
+export const ServicosItemStyle = StyleSheet.create({
   informacao: {
-    padding: 24
+    padding: 24,
+  },
+  header: {
+    // backgroundColor: 'red'
   },
   nome: {
     color: cores.laranja,
     fontWeight: 'bold',
-    fontSize: 16,
+    fontSize: 18,
+    marginBottom: 8,
+
   },
   calculo: {
     color: cores.escuro,
@@ -22,13 +27,14 @@ export default StyleSheet.create({
     textAlign: 'right',
   },
   divisor: {
-    marginHorizontal: 24,
+    // marginHorizontal: 24,
+    paddingTop: 24,
     borderBottomWidth: 1,
     borderBottomColor: cores.cinza,
+    // backgroundColor: 'red'
   },
   carrinho: {
-    paddingHorizontal: 24,
-    paddingBottom: 24,
+    paddingTop: 24,
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
